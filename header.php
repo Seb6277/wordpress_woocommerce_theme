@@ -22,12 +22,12 @@
                 <a href="<?php bloginfo('url'); ?>">
                     <h1 class="logo"><?php bloginfo('name');?></h1>
                 </a>
-                <nav class="navbar navbar-expand-lg">
+                <?php endif; ?>
+                <nav class="navbar navbar-expand-lg navbar-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <?php endif; ?>
                         <?php
                         wp_nav_menu(
                                 array(
