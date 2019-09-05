@@ -19,7 +19,7 @@
 						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 
                         <div class="post-meta">
-                        le <?php the_time('j F Y à H:i'); ?> by
+                        le <?php the_time('j F Y à H:i'); ?> par
                             <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">
                                 <?php the_author();?>
                             </a>
@@ -32,7 +32,7 @@
 						<?php endif; ?>
 
 						<?php the_excerpt(); ?>
-                        <a class="btn btn-primary" href="<?php the_permalink(); ?>">Read More</a>
+                        <a class="btn btn-primary" href="<?php the_permalink(); ?>"><?php echo __('Read More'); ?></a>
 
                     </div>
 

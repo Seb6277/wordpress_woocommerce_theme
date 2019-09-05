@@ -20,9 +20,9 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                     <div class="post-meta">
-                        le <?php the_time('j F Y à H:i'); ?> by
+                        le <?php the_time('j F Y à H:i'); ?> par
                         <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">
-                            <?php the_author();?>
+							<?php the_author();?>
                         </a>
                     </div>
 
