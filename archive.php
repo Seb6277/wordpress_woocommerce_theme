@@ -12,13 +12,18 @@
 
 				<div class="col-lg-9">
 
-                    <div>
-                        <h1><?php single_cat_title(); ?></h1>
-                    </div>
-
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                     <div class="blog-post">
+
+						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
+
+                        <div class="post-meta">
+                        le <?php the_time('j F Y à H:i'); ?> by
+                            <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">
+                                <?php the_author();?>
+                            </a>
+                        </div>
 
 						<?php if (has_post_thumbnail()): ?>
 							<a href="<?php the_permalink(); ?>">
@@ -26,8 +31,8 @@
 							</a>
 						<?php endif; ?>
 
-						<a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 						<?php the_excerpt(); ?>
+                        <a class="btn btn-primary" href="<?php the_permalink(); ?>">Read More</a>
 
                     </div>
 

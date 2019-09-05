@@ -9823,3 +9823,11 @@ footer {
 .pagination a {
   color: red;
 }
+
+.post-meta {
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+.post-meta a {
+  text-decoration: underline;
+}
