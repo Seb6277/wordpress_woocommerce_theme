@@ -9756,16 +9756,27 @@ header .nav li a {
 }
 
 .woocommerce-MyAccount-navigation ul {
-  list-style-type: none;
+  padding-top: 10px;
   padding-left: 0;
   padding-right: 1rem;
-}
-.woocommerce-MyAccount-navigation ul li {
+  padding-bottom: 10px !important;
+  list-style-type: none;
   border-radius: 0.2rem;
   text-align: center;
-  margin-bottom: 10px;
   font-size: 1.2rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.woocommerce-MyAccount-navigation ul hr {
+  width: 50%;
+  text-align: center;
+  border: 1px solid grey;
+}
+.woocommerce-MyAccount-navigation ul li {
+  margin-bottom: 10px;
+}
+
+.woocommerce-form-login__rememberme {
+  margin-right: 20px;
 }
 
 #hero {

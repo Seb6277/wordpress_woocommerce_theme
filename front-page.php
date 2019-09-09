@@ -2,7 +2,7 @@
 
 <div id="hero">
 	<div class="container d-flex align-items-center justify-content-center h-100">
-		<h1>Welcome to my shop</h1>
+		<h1><?php bloginfo('description'); ?></h1>
 	</div>
 </div>
 

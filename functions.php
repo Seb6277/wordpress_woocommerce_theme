@@ -45,6 +45,8 @@ register_nav_menus(
 
 // Add image sizes
 add_image_size('post_image', 1100, 550, false);
+add_image_size('woocommerce_gallery_thumbnail', 100, 100, true);
+add_image_size('woocommerce_thumbnail', 600, 600, true);
 
 // Add widget
 register_sidebar(
@@ -66,3 +68,9 @@ register_sidebar(
 		'after_title' => '</h4>'
 	)
 );
+
+// Count how many items account menu have to display
+function wc_get_account_menu_items_length(){
+	return count(wc_get_account_menu_items());
+}
+add_action('woocommerce_before_account_navigation', 'wc_get_account_menu_items_length');
