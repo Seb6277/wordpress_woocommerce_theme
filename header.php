@@ -30,10 +30,11 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <?php
                         wp_nav_menu(
-                                array(
-                                        'theme_location' => 'top-menu',
-                                        'menu_class' => 'top-menu'
-                                )
+                            array(
+                                'theme_location' => 'top-menu',
+                                'menu_class' => 'nav navbar-nav mr-auto',
+                                'container' => false
+                            )
                         );
                         ?>
                     </div>

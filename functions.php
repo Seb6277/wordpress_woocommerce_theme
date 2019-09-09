@@ -66,4 +66,3 @@ register_sidebar(
 		'after_title' => '</h4>'
 	)
 );
-
