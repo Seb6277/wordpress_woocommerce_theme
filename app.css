@@ -9758,8 +9758,18 @@ footer .copyright {
 footer .div-footer-menu {
   text-align: right;
 }
+@media screen and (max-width: 780px) {
+  footer .div-footer-menu {
+    text-align: center;
+  }
+}
 footer .div-footer-menu .footer-menu {
   list-style-type: none;
+}
+@media screen and (max-width: 780px) {
+  footer .footer-logo {
+    text-align: center;
+  }
 }
 
 .woocommerce .woocommerce-input-wrapper {
