@@ -9743,6 +9743,25 @@ header .nav li a {
   font-weight: bold;
 }
 
+footer .footer-row {
+  height: 300px;
+  align-items: center;
+}
+footer .custom-logo {
+  width: 150px;
+  height: auto;
+  max-height: 300px;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .div-footer-menu {
+  text-align: right;
+}
+footer .div-footer-menu .footer-menu {
+  list-style-type: none;
+}
+
 .woocommerce .woocommerce-input-wrapper {
   width: 100%;
   display: block;

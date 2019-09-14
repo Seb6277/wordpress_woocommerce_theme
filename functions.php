@@ -43,6 +43,13 @@ register_nav_menus(
 	)
 );
 
+// Register footer menu
+register_nav_menus(
+	array(
+		'footer-menu' => __('Footer menu', 'theme'),
+	)
+);
+
 // Add image sizes
 add_image_size('post_image', 1100, 550, false);
 add_image_size('woocommerce_gallery_thumbnail', 100, 100, true);
