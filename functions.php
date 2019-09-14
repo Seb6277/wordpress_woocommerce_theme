@@ -1,5 +1,32 @@
 <?php
 
+// Support for TGM required plugins
+require_once get_template_directory() . '/inc/TGM/class-tgm-plugin-activation.php';
+add_action('tgmpa_register', 'TGM_register_required_plugins');
+
+function TGM_register_required_plugins(){
+	$plugins = array(
+		array('name' => 'Classic Editor',
+		      'slug' => 'classic-editor',
+		      'required' => false)
+	);
+
+	$config = array(
+		'id' => 'TGM',
+		'default_path' => '',
+		'menu' => 'tgmpa-install-plugins',
+		'parent-slug' => 'themes.php',
+		'capability' => 'edit_theme_options',
+		'has_notices' => true,
+		'dismissable' => true,
+		'dismiss_msg' => '',
+		'is_automatic' => false,
+		'message' => ''
+	);
+
+	tgmpa($plugins, $config);
+}
+
 function load_stylesheets()
 {
 	wp_register_style('stylesheet', get_template_directory_uri() . '/style.css', '', 1, 'all');
