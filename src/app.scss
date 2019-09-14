@@ -8,6 +8,7 @@
 #hero{
 
   height: 200px;
+  width: 100%;
 
   @media screen and (min-width: 768px){
     height: 450px;
@@ -16,10 +17,6 @@
   @media screen and (min-width: 1200px){
     height: 550px;
   }
-
-  width: 100%;
-  background: url("img/hero.jpg") #f0f0f0;
-  background-size: cover;
 
   h1{
     color: $light;

@@ -54,6 +54,13 @@ add_theme_support( 'custom-logo', array(
 	'flex-width' => true
 ));
 
+// Add dynamic hero images
+$customHeader = array(
+	'default-image' => get_template_directory_uri() . '/images/hero.jpg',
+	'uploads' => true,
+);
+add_theme_support('custom-header', $customHeader);
+
 add_theme_support('custom-background');
 
 // WooCommerce support
